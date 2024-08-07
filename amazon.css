@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+/* box1 in navbar */
+.nav{
+    height: 60px;
+    background-color:#131A22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{ 
+    /* this is outer box */
+    height: 50px;
+    width: 100px;
+    
+
+   /* background-image: url("amazon_logo.png");
+background-size: cover;*/
+
+ /* [we put the Anazon logo in this div but we dont do that because od we first create a div and we consider this div those class is (nav-logo)this 
+ is outer div and we consider this div in practical life is a outer box or we can say that this div is a one type of margin 
+ and under div whose class is (logo ) this is inner box or we can say thay it is a content] */
+}
+.logo{
+    /* this is inner box */
+
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height:50px;
+    width: 100%;
+   
+}
+.border{
+    border: 1px solid transparent;
+}
+.border:hover{
+    border:1.5px solid white;
+    
+}
+
+/* box 2 in navbar */
+
+.deliver{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.india{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+/* box 3 this is a search box*/
+.nav-search{
+    display: flex;
+    background-color: pink;
+    height: 40px;
+    width: 620px;
+    border-radius: 4px;
+    justify-content:space-evenly ;
+    /* align-items: center; */
+    
+    
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    background-color: #febd68;
+    color: rgb(46, 44, 44);
+    
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+/* This is  country or language box */
+.nav-country{
+    display: flex;
+}
+.flag-logo{
+    height: 19px;
+    width:30px;
+}
+.flag{
+    background-image: url("Flag_of_India.svg.webp");
+    background-size: cover;
+    height:19px;
+    width: 100%;
+}
+
+.search-language{
+    background-color:#131A22;
+    border: none;
+    color: #FFFFFF;
+    font: 14PX, arial,sans-serif;
+    font-weight: 800;
+    margin-left: 5px;
+}
+/* this is account box */
+span{
+    font-size: 0.7rem;
+}
+.account{
+    font-size: 0.85rem;
+    font-weight: bold;
+    background-color: #131A22;
+    color: #ffffff;
+    border: none;
+}
+/* returns & orders box */
+
+.order{
+    font-size: 0.85rem;
+    font-weight:800 ;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+/* cart box */
+.nav-cart i{ 
+    font-size: 30px;
+   
+}
+.nav-cart{
+    display: flex;
+    justify-content: last baseline
+}
+p1{
+    font-size: small;
+}
+ /* panel box */
+ .panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    
+ }
+ .panel-ops p{
+    display: inline;
+    margin-left:10px ;
+ }
+ .panel-ops{
+    width: 60%;
+    font-size: 0.85rem;
+ }
+ .panel-details{
+    font-size: 0.9rem ;
+    font-weight: 700;
+    margin-left: 60px;
+ }
+ .panel-all{
+    margin-right: 20px;
+    margin-left: 20px;
+ }
+ p2{
+    font-size: small;
+    font-weight: bold;
+    margin-left: 5px;
+ }
+.sec-1{
+    position: relative;
+    width: 100%;
+    height: 1190px;
+    box-sizing: border-box;
+}
+.slide img{
+    width: 1360px;
+    height: 100%;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 560px;
+    
+}
+.image-box{
+    display: flex;
+    position: absolute;
+    animation: carousel 9s alternate infinite;
+}
+@keyframes carousel{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0%;
+    }
+    24%{
+        left: -1360px;
+    }
+    42%{
+        left: -1360px;
+    }
+    46%{
+        left: calc(-1360*2px);
+    }
+    62%{
+        left: calc(-1360*2px);
+    }
+    66%{
+        left: calc(-1360*3px);
+    }
+    82%{
+        left: calc(-1360*3px);
+    }
+    86%{
+        left: calc(-1360*4px);
+    }
+    100%{
+        left: calc(-1360*4px);
+    }
+}
+.container-1{
+    position: absolute;
+    z-index: 1;
+    top: 230px;
+    left: 0;
+    width: 95%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom,transparent,#eaeded 30%);
+    margin-left: 20px;
+}
+.container-1 .para{
+    background-color: rgb(238,234,234);
+    width: 100%;
+    text-align: center;
+}
+.para{
+    width: 100%;
+}
+.container-1 div:first-child{
+    font-size: 14px;
+    padding: 12px 0;
+}
+.product-comp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 20px 0;
+    justify-content: space-around;
+}
+.product-comp .box{
+    width: 315px;
+    height: 400px;
+    background-color: white;
+    
+}
+.box h3{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(43,42,42);
+}
+.box a{
+    font-size: 13px;
+    margin-left: 20px;
+    display: block;
+    padding-top: 30px;
+    background-color:  #ffffff34;
+}
+.box-a{
+    overflow: hidden;
+    background-color: #ffffff34;
+}
+.box div img{
+    width: 167px;
+    height: 120px;
+    cursor: pointer;
+    margin-left: -20px;
+    margin-right: 0;
+}
+.a{
+    text-decoration: none;
+    color:  #007185;;
+}
+.box-a div{
+    display: inline-block;
+}
+.box-a div span{
+    display: block;
+    font-size: 13px;
+    margin-left: 20px;
+}
+/* shop section */
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.boxx{
+    /* border: 2px solid black ; */
+    height: 400px;
+    width: 23%;
+    padding: 20px 0px 15px;
+    background-color: #8487a385;
+    margin-top: 15px;
+}
+.boxx-img{
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.boxx-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxx-content p{
+    color: #007185;
+}
+/* fotter */
+
+.top{
+    background-color: hsl(212, 29%, 28%);
+    color:  #FFF;
+    height: 49px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    
+}
+.main-fotter{
+    height: 400px;
+    background-color: #222f3d;
+    color: #FFF;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    
+}
+.under-fotter{
+    height: 70px;
+    background-color:#222f3d;
+    
+    border-top: 1px solid hwb(209 22% 65%) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.main a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 20px;
+    color: #dddddd;
+    
+}
+.main-fotter p{
+    margin-top: 50px;
+    font-weight: 580;
+}
+.logo-fotter{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height:50px;
+    width: 100px;
+    margin-right: 65px;
+    margin-top: 5px;
+    
+}
+.chose-language{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    border: 1px solid hwb(210 78% 15%);
+    margin-top: 5px;
+    
+}
+.glove{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.glove i{
+    color: #dddddd;
+    font-size: 0.9rem;
+}
+select{
+    background-color: #222f3d;
+    border: none;
+    font-weight: 500;
+    color:#dddddd ;
+}
+
+.c-name-fotter{
+    height: 100px;
+    background-color:  #222f3d ;
+    display: flex;
+    justify-content: center;
+}
+.india a{
+    margin-right: 10px;
+    color: #dddddd;
+    font-size:  0.8rem;
+}
+.uk{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.last-fotter{
+    height: 150px;
+    background-color:#131A22;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.last-fotter p{
+    color: #dddddd;
+}
+.u a{
+    display: block;
+    font-size: 0.7rem;
+    color: #d9d9d9;
+    
+    
+}
+
+ .bold { 
+    font-size: 0.9rem;
+    font-weight: 300;
+    
+}
+.bold-1{
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.u a{
+    margin-top: 3px;
+}
+.privacy {
+    height: 50px;
+    display: flex;
+    background-color:#131A22;
+    color: #dddddd;
+    justify-content: center;
+    
+}
+.privacy-1 a{
+    
+    font-size: 0.9rem;
+    margin-left: 10px;
+    
+}
+.privacy-1{
+    margin-left: 100px;
+}
+.copyright a{
+    margin-left: 45px;
+}
+/* #131A22
+hsl(235, 48%, 5%) */ccccccccccccccccccccccccccccccccc
